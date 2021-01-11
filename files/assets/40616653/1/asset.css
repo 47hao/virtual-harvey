@@ -1,0 +1,184 @@
+.container {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    
+    background-color: #222;
+    color: #fff;
+    font-weight: 100;
+    
+    opacity: 0.2;
+    
+    box-shadow: 0 0 16px rgba(0, 0, 0, .3);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.container:hover {
+    opacity: 1;
+}
+
+.mobileContainer {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    
+    background-color: #222;
+    color: #fff;
+    font-weight: 100;
+    
+    opacity: 1;
+    
+    box-shadow: 0 0 16px rgba(0, 0, 0, .3);
+    border-radius: 8px;
+    transition: 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex:1;
+}
+/*
+.mobileContainer:hover {
+    opacity: 1;
+}
+*/
+.options {
+    padding: 8px;
+    flex: 1;
+}
+
+/*
+.button {
+    float: right;
+    background-color: #444;
+    color: #fff;
+    font-weight: 100;
+    font-size: 12;
+    border: none;
+    outline: none;
+    border-radius: 8px 0px 8px 0px;
+    height: 32px;
+    width: 96px;
+}
+
+.button:active {
+    background-color: #666;
+}
+*/
+.stethButton {
+    -webkit-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    flex: 1;
+    background-color: #0A5;
+    color: #fff;
+    font-weight: 100;
+    font-size: 12;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    height: 96px;
+    width: 56px;
+}
+
+.stethButton:active {
+    background-color: #083;
+}
+
+.slideContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex:1;
+}
+
+.selectContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex:1;
+}
+
+.slider-label {
+    width:130px; 
+}
+
+.dropdown-label {
+    width: 130px;
+}
+
+.bpm {
+    width:40px;
+    text-align: center;
+}
+
+.respRate {
+    width:40px;
+    text-align: center;
+}
+
+.heartSelect {
+    flex: 1;
+    width: 120px;
+    
+    border: none;
+    outline: none;
+}
+
+.lungSelect {
+    flex: 1;
+    width: 120px;
+    
+    border: none;
+    outline: none;
+}
+
+
+.bpmSlider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    height: 5px;
+    border-radius: 20px;
+    width: 120px;
+    flex:1;
+}
+
+.bpmSlider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px; /* Set a specific slider handle width */
+    height: 16px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 50%;
+}
+
+.respSlider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    outline: none;
+    height: 5px;
+    border-radius: 20px;
+    width: 120px;
+    flex:1;
+}
+
+.respSlider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px; /* Set a specific slider handle width */
+    height: 16px; /* Slider handle height */
+    background: #F55442; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 50%;
+}
